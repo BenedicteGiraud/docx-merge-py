@@ -1,6 +1,7 @@
 from io import BytesIO
 from pathlib import Path
 
+# relative imports only! otherwise the module is not ofund in the published package
 from .utils.merger import merge_xml
 from .utils.xml import extract_document_xml, replace_document_xml
 

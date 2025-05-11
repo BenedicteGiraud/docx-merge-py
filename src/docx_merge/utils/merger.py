@@ -1,6 +1,7 @@
 from copy import deepcopy
 from io import BytesIO
 
+# relative imports only! otherwise the module is not ofund in the published package
 from .xml import get_string_from_xml, get_xml_from_stream
 
 
