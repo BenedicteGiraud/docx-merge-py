@@ -1,4 +1,4 @@
-# 📄 docx_merge
+# 📄 docx-merge-xml
 
 A fast Python library for merging two Microsoft Word (`.docx`) documents into one. Easily insert content at specific positions or based on placeholder patterns.
 
@@ -9,7 +9,7 @@ A fast Python library for merging two Microsoft Word (`.docx`) documents into on
 Install via pip:
 
 ```bash
-pip install docx_merge
+pip install docx-merge-xml
 ```
 
 ## 📚 Dependencies

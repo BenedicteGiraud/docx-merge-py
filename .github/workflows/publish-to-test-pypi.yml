@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: testpypi
-      url: https://test.pypi.org/project/docx_merge
+      url: https://test.pypi.org/project/docx-merge-xml
 
     permissions:
       id-token: write # IMPORTANT: mandatory for trusted publishing

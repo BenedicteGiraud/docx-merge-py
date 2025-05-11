@@ -1,5 +1,5 @@
 [project]
-name = "docx_merge"
+name = "docx-merge-xml"
 dynamic = [ "version" ]
 description = "A fast Python library for merging two Microsoft Word (.docx) documents into one."
 authors = [
