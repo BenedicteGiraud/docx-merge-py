@@ -22,12 +22,12 @@ Only one dependency:
 
 ```py
 merge_docx(
-	source_path: str,
-	content_path: str,
-	output_path: str | None = None,
-	pattern: str | None = None,
-	insert_start: bool = False,
-	insert_end: bool = False,
+  source_path: str,
+  content_path: str,
+  output_path: str | None = None,
+  pattern: str | None = None,
+  insert_start: bool = False,
+  insert_end: bool = False,
 ) -> BytesIO
 ```
 
@@ -50,9 +50,9 @@ Parameters:
 from docx_merge import merge_docx
 
 buffer = merge_docx(
-	source_path="./source.docx",
-	content_path="./table.docx",
-	pattern="{{table}}"
+  source_path="./source.docx",
+  content_path="./table.docx",
+  pattern="{{table}}"
 )
 
 # Use buffer (e.g., send as a response in a server)
@@ -64,10 +64,10 @@ buffer = merge_docx(
 from docx_merge import merge_docx
 
 buffer = merge_docx(
-	source_path="./source.docx",
-	content_path="./table.docx",
-	output_path="./output.docx",
-	pattern="{{table}}"
+  source_path="./source.docx",
+  content_path="./table.docx",
+  output_path="./output.docx",
+  pattern="{{table}}"
 )
 ```
 
@@ -77,9 +77,9 @@ buffer = merge_docx(
 from docx_merge import merge_docx
 
 merge_docx(
-	source_path="./source.docx",
-	content_path="./table.docx",
-	output_path="./output.docx",
+  source_path="./source.docx",
+  content_path="./table.docx",
+  output_path="./output.docx",
   insert_start=True
 )
 ```
@@ -90,9 +90,9 @@ merge_docx(
 from docx_merge import merge_docx
 
 merge_docx(
-	source_path="./source.docx",
-	content_path="./table.docx",
-	output_path="./output.docx",
+  source_path="./source.docx",
+  content_path="./table.docx",
+  output_path="./output.docx",
   insert_end=True
 )
 ```
