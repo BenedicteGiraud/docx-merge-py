@@ -1,4 +1,4 @@
-name: Publish Python 🐍 distribution 📦 to TestPyPI
+name: 🐍 Publish Python distribution to TestPyPI
 
 on:
   pull_request:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   publish-to-testpypi:
-    name: Publish Python 🐍 distribution 📦 to TestPyPI
+    name: 🐍 Publish Python distribution to TestPyPI
     runs-on: ubuntu-latest
     environment:
       name: testpypi
