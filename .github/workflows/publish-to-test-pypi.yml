@@ -37,6 +37,17 @@ jobs:
           pip install poetry
           echo "$HOME/.local/bin" >> $GITHUB_PATH
 
+      - name: 🏷️ Get tag version and set project version
+        run: |
+          TAG_VERSION="0.1.${{ github.run_number }}"
+          echo "TAG_VERSION: $TAG_VERSION"
+          if [ -z "$TAG_VERSION" ]; then
+            echo "No tag version found. Exiting."
+            exit 1
+          fi
+          echo "Setting version to $TAG_VERSION"
+          poetry version "$TAG_VERSION"
+
       - name: 📦 Install dependencies
         run: poetry install --without dev
 
