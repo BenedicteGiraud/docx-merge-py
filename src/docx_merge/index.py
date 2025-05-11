@@ -1,8 +1,8 @@
 from io import BytesIO
 from pathlib import Path
 
-from utils.merger import merge_xml
-from utils.xml import extract_document_xml, replace_document_xml
+from .utils.merger import merge_xml
+from .utils.xml import extract_document_xml, replace_document_xml
 
 
 def read_file(file_path: str) -> BytesIO:

@@ -1,7 +1,7 @@
 from copy import deepcopy
 from io import BytesIO
 
-from utils.xml import get_string_from_xml, get_xml_from_stream
+from .xml import get_string_from_xml, get_xml_from_stream
 
 
 def merge_xml(
