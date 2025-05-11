@@ -33,7 +33,7 @@ jobs:
 
       - name: 🏷️ Get tag version and set project version
         run: |
-          TAG_VERSION="${GITHUB_REF#refs/tags/v}"
+          TAG_VERSION=$(echo "${GITHUB_REF}" | cut -d'/' -f3)
           echo "TAG_VERSION: $TAG_VERSION"
           if [ -z "$TAG_VERSION" ]; then
             echo "No tag version found. Exiting."
